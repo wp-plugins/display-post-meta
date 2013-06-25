@@ -1,5 +1,5 @@
 === Display Post Meta ===
-Contributors: brashrebel
+Contributors: BrashRebel
 Tags: post meta, custom fields, taxonomies
 Requires at least: 3.0.0
 Tested up to: 3.5.2
