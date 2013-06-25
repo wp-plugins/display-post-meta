@@ -24,9 +24,13 @@ This plugin was designed for the purpose of outputting the meta data associated 
 
 To use this plugin, simply activate then either:
 
-1. Place the shortcode [show_meta] in the body of the post or page you wish to view meta data for.
 
-1. Navigate to any page on your site and simply add ?show_meta to the end of your URL string.
+A. Place the shortcode [show_meta] in the body of the post or page you wish to view meta data for.
+
+
+OR
+
+B. Navigate to any page on your site and simply add ?show_meta to the end of your URL string.
 
 
 
