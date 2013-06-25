@@ -1,6 +1,6 @@
 === Display Post Meta ===
 
-Contributors: brashrebel
+Contributors: BrashRebel
 
 Tags: post meta, custom fields, taxonomies
 
