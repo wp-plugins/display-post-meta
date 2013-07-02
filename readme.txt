@@ -83,7 +83,10 @@ Data is output in tabs on the side of the screen that reveal more on hover.
 
 == Changelog ==
 
+= 1.1 =
 
+* Better CSS
+* Fixed taxonomy loop to no longer nest
 
 = 1.0 =
 
@@ -94,6 +97,7 @@ Data is output in tabs on the side of the screen that reveal more on hover.
 
 == Upgrade Notice ==
 
+= 1.1 =
 
 
 = 1.0 =
