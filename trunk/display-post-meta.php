@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Display Post Meta
-Description: This plugin allows you to display the meta data for a post. Just add the [show_meta] shortcode in the body of the post you wish to view the meta data for OR add ?show_meta to the end of your page's URL.
+Description: This plugin allows you to display the meta data for a post. Just add the [show_meta] shortcode in the body of the post you wish to view the meta data for or add ?show_meta to the end of your page's URL.
 Version: 1.0
 Author: Kyle Maurer
 Author URI: http://realbigmarketing.com/staff/kyle
@@ -10,6 +10,7 @@ Author URI: http://realbigmarketing.com/staff/kyle
 /*
 Credit for taxonomies part goes here http://stackoverflow.com/questions/14956624/show-all-taxonomies-for-a-specific-post-type
 Check if URL contains https://forums.digitalpoint.com/threads/if-url-contains-x-then.1045579/
+Idea for the ?show_meta URL trick from Peter Shackelford http://twitter.com/pixelplow
 */
 function get_post_meta_all($post_id){
     global $wpdb;
@@ -38,11 +39,12 @@ $meta = get_post_meta_all(get_the_ID());
 //Taxonomies
   $id = get_the_ID();
   foreach ( get_object_taxonomies( 'post' ) as $taxonomy ) {
-    $terms_list = get_the_term_list( $id, $taxonomy, '<ul class="entry-taxonomies"><ul class="tax-terms"><li>', ''.__( '', '' ).'</li><li>','</li></ul>' );
+    $terms_list = get_the_term_list( $id, $taxonomy, '<ul class="entry-taxonomies"><ul class="tax-terms"><li>', ''.__( '', '' ).'</li><li>','</li></ul></div>' );
     if ( $terms_list ) {?>                  
-     <div class="tax-tab"><span class="meta-tab">Tax</span><span class="tax-taxonomy"><?php echo $taxonomy; ?></span><?php echo $terms_list; ?><?php
-    }
+     <div class="tax-tab"><span class="tax-taxonomy"><?php echo $taxonomy; ?></span><?php echo $terms_list; ?><?php
+	}
   }?>
+
   </ul></p></div></div>
 <?php
 }
@@ -50,7 +52,7 @@ $meta = get_post_meta_all(get_the_ID());
 
 add_shortcode( 'show_meta', 'display_meta' );
 if (stripos($_SERVER['REQUEST_URI'],'?show_meta') !== false) {
-add_action('shutdown', 'display_meta');
+add_action('wp', 'display_meta');
 }
 
 ?>
