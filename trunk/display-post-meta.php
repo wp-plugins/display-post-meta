@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Display Post Meta
-Description: This plugin allows you to display the meta data for a post. Just add the [show_meta] shortcode in the body of the post you wish to view the meta data for or add ?show_meta to the end of your page's URL.
+Description: This plugin allows you to display the meta data for a post. Just click on the DPM link in the admin bar when viewing the post you wish to see meta data for.
 Version: 1.2
 Author: Kyle Maurer
 Author URI: http://realbigmarketing.com/staff/kyle
