@@ -48,7 +48,7 @@ Using this plugin is very simple. All you have to do is:
 
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
-1. Navigate to any Post or Page on your website and add ?show_meta to the end of your URL string.
+1. Navigate to any Post or Page on your website and click on the DPM link in the admin bar.
 
 
 
@@ -86,6 +86,11 @@ Data is output in tabs on the side of the screen that reveal more on hover.
 
 == Changelog ==
 
+= 1.2 =
+
+* Improved CSS
+* Added DPM link to admin bar for quick access
+
 = 1.1 =
 
 * Better CSS
@@ -100,4 +105,4 @@ Data is output in tabs on the side of the screen that reveal more on hover.
 
 == Upgrade Notice ==
 
-= 1.1 =
+= 1.2 =
