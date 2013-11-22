@@ -6,9 +6,9 @@ Tags: post meta, custom fields, taxonomies
 
 Requires at least: 3.0.0
 
-Tested up to: 3.5.2
+Tested up to: 3.6.2
 
-Stable tag: 1.1
+Stable tag: 1.2
 
 License: GPLv2 or later
 
@@ -24,13 +24,16 @@ This plugin was designed for the purpose of outputting the meta data associated 
 
 To use this plugin, simply activate then either:
 
+A. Click on the DPM link in the admin bar.
 
-A. Place the shortcode [show_meta] in the body of the post or page you wish to view meta data for.
+OR
+
+B. Place the shortcode [show_meta] in the body of the post or page you wish to view meta data for.
 
 
 OR
 
-B. Navigate to any page on your site and simply add ?show_meta to the end of your URL string.
+C. Navigate to any page on your site and simply add ?show_meta to the end of your URL string.
 
 
 
