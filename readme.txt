@@ -6,9 +6,9 @@ Tags: post meta, custom fields, taxonomies
 
 Requires at least: 3.0.0
 
-Tested up to: 3.9.1
+Tested up to: 4.0
 
-Stable tag: 1.3
+Stable tag: 1.4
 
 License: GPLv2 or later
 
@@ -70,6 +70,18 @@ Data is output in tabs on the side of the screen that reveal more on hover.
 
 == Changelog ==
 
+= 1.4 =
+
+* Added "Other" section which includes post info like author, published date, ID and current template
+* Added some sanitization for increased security
+* Refactored lots of the core code for more clarity and flexibility
+* Added a close button on the info screen
+
+= 1.3.1 =
+
+* Placed all core functions into a class
+* Improved WordPress coding standards compliance
+
 = 1.3 =
 
 * Lots of styling adjustments
@@ -79,8 +91,6 @@ Data is output in tabs on the side of the screen that reveal more on hover.
 * Greatly improved display of custom field data
 * Removed the `[show_meta]` shortcode
 * Add clarifying statement if no custom fields
-* Placed all core functions into a class
-* Improved WordPress coding standards compliance
 
 = 1.2.0 = 
 
