@@ -1,23 +1,17 @@
 === Display Post Meta ===
 
 Contributors: BrashRebel, bretterer
-
+Donate link: http://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=admin%40realbigmarketing%2ecom
 Tags: post meta, custom fields, taxonomies
-
 Requires at least: 3.0.0
-
-Tested up to: 4.0
-
-Stable tag: 1.4
-
+Tested up to: 4.1
+Stable tag: 1.5
 License: GPLv2 or later
-
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 
 == Description ==
-
 
 
 This plugin was designed for the purpose of outputting the meta data associated with a WP post or page so developers and site designers can verify what information is available.
@@ -26,7 +20,7 @@ To use this plugin, simply activate then either simply navigate to a post, page 
 
 `http://example.com/test-post/?show_meta=true`
 
-
+If you are interested in learning about the other plugins we have created and/or are working on and would like to know about new releases and special offers we have, please [subscribe here](http://eepurl.com/3KR1D).
 
 == Installation ==
 
@@ -58,7 +52,7 @@ When working with WordPress it is often useful to view the meta data that is bei
 
 * Choices for how you would like to the data to be displayed.
 
-* More detailed data pertaining to the current post
+* More detailed data pertaining to the current post.
 
 
 
@@ -68,7 +62,19 @@ When working with WordPress it is often useful to view the meta data that is bei
 
 Data is output in tabs on the side of the screen that reveal more on hover.
 
+2. screenshot-2.png
+
+Data is output inline via the Post Meta link (not present in all themes).
+
 == Changelog ==
+
+= 1.5 =
+
+* Check to ensure user is an administrator before displaying content or button rather than just logged in
+* Don't show the toolbar button on archives, admin pages and others where it doesn't make sense
+* Show the toolbar button for small screens (was hidden)
+* Add a Post Meta link next to the Edit post link on the front end
+* Show meta data inline when Post Meta link is clicked
 
 = 1.4 =
 
@@ -125,11 +131,10 @@ Data is output in tabs on the side of the screen that reveal more on hover.
 
 * Initial release.
 
-
 == Upgrade Notice ==
 
-= 1.3 =
+= 1.5 =
 
-* Better styling
-* Better custom taxonomy support
-* Cleaner code
+* Improved conditional button rendering
+* Inline option for displaying meta data
+* Tighter security measures
